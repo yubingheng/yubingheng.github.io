@@ -1,59 +1,101 @@
-<!DOCTYPE HTML>
-<HTML>
-    <HEAD>
-        <META charset="UTF-8">
-        <TItle>余冰恒</TItle>
-        <link rel="stylesheet" href="./webcss.css">
-    </HEAD>
-    <body>
-        <div class="box">
-          <table border="0" cellspacing="10" cellpadding="0">
-            <tr>
-                <td width="300px">
-                    <div class="useimgbox">
-                       <img src="./IMG/2.jpg" alt="" >
-                    </div>
-                </td>
-                <td width="100px"> <a href="">我的主页</a></td>
-                <td width="100px"><a href="./web_xiangce.html">我的相册</a></td>
-                <td width="100px"><a href="./daxue.html">我的大学</a></td>
-            </tr>
-          </table>
-          <hr size="2" color="#cccccc">
-          <table>
-            <tr>
-                <td width="415">
-                    <p>
-                      我的个人简介<br/>
-                     姓名：余冰恒<br/>
-                     性别：男</p><br/>
-                     出生日期:2001.03.05<br/>
-                     婚姻情况:未婚<br/>
-                     学校：成都理工大学<br/>
-                     爱好:fps游戏,动漫，金铲铲,猫<br/>
-                     养了只叫余小咪的主子<br/>
-                    </p>
-                </td>
-                <td>
-                    <img width="320" height="320" src="./IMG/7.jpg" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img width="320" height="320" src="./IMG/5.jpg" alt="">
-                </td>
-                <td width="415">
-                    <p>
-                        喜欢泡澡，健身<br/>
-                        亲近自然<br/>
-                        享受独孤<br/>
-                        无聊的时候会找漫画，动漫看<br/>
-                        喜欢余小咪<br/>
-                    </p>
-                </td>
-                
-            </tr>
-          </table>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <TItle>余冰恒</TItle>
+    <link rel="stylesheet" href="./webcss.css">
+
+<style>
+    *{
+        padding:0;
+        margin: 0;
+        outline: none;
+    }
+    body{
+        background:linear-gradient(45deg,rgb(27, 156, 192),rgb(17, 208, 179));
+        display:fixed ;
+        justify-content:center;
+        align-items:center;
+        height: 100vh;
+    }
+    .shell{
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        width: 520px;
+        height: 520px;
+        background-color: aliceblue;
+        box-shadow: 0px 15px 40px rgb(71, 172, 215);
+        border-radius:15px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #img-box{
+        width: 330px;
+        height: 500px;
+    }
+    #img-box img{
+        
+        height: 100%;
+    }
+    #form body{
+        width: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #welcome-lines{
+        width: 100%;
+        text-align: center;
+        line-height: 1;
+    }
+    #welcome-lines-1{
+        color: rgba(2, 68, 75, 0.991);
+        font-size: 50px;
+    }
+    #welcome-lines-2{
+       color: rgba(2, 68, 75, 0.99);
+       font-size: 30px;
+       margin-top:17px;
+    }
+    #submit-button-cvr{
+        margin-top: 20px;
+    }
+    #submit-button{
+        display: block;
+        width: 100%;
+        color: #fff;
+        font-size: 14px;
+        margin: 0;
+        padding: 14px 40px;
+        border: 0;
+        background-color: aqua;
+        border-radius: 25px;
+        line-height: 1;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div class="shell">
+        <div id="img-box">
+            <img src="./IMG/8.jpg" alt="">
         </div>
-    </body>
-</HTML>
+        <form action="" method="post">
+            <div id="form-body">
+                <div id="welcome-lines">
+                    <div id="welcome-lines-1">Hello</div>
+                    <div id="welcome-lines-2">welcome</div>
+                </div>
+                <div id="submit-button-cvr">
+                    <button type="submit" id="submit-button"> <a href="./WEB.html">进入</a></button>
+                   
+                </div>
+            </div>
+    </div>
+</body>
+</html>
